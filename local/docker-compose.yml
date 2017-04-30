@@ -1,0 +1,10 @@
+version: '2'
+services:
+  web:
+    build: ./web_local
+    hostname: web_local
+    container_name: web_local
+    ports:
+      - '80:80'
+    volumes:
+      - ../src:/opt/
